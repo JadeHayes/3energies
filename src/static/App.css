@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 80px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.App-intro {
+  font-size: large;
+}
