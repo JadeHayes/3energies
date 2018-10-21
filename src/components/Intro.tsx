@@ -4,13 +4,20 @@ import styled from 'styled-components';
 const StyledIntro = styled.div`
   width: 100%;
   padding: 20px 0 15px 0 ;
+  background-color: white;
+  margin: 0 auto;
+  padding: 2em;
+  display: block;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 1060px;
+  font-family: "Oxygen", sans-serif;
 
   .header {
-    font-family: Fjalla One;
+    font-family: "Oxygen", sans-serif;
+    font-weight: 300;
     color: #44502a;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 30px;
+    font-size: 22px;
   }
 `;
 const StyledSubHeader = styled.p`
@@ -39,8 +46,8 @@ const Intro: React.SFC = () => (
     </StyledP>
     <StyledLastP>
       "Learn to bend, it's better than breaking"
-      <hr/>
     </StyledLastP>
+      <hr/>
   </StyledIntro>
 );
 

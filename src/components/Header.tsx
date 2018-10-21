@@ -1,33 +1,47 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import cover from '../static/cover.png';
-import logo from '../static/logo.png';
+
 
 const StyledImg = styled.div`
   img {
     width: 100%
+    opacity: .8;
     display: block;
   }
 `;
 
-const StyledLogo = styled.div`
-  padding-top: 20px;
-  margin: auto;
-  max-width: 80px;
-  width: 50%;  
-`;
-
-const StyledHeaderContainer = styled.div`
+const StyledContainer = styled.div`
+  font-family: "Oxygen", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
+  color: gray;
+  align-items: center;
+  
+  .whitespace {
+    background-color: white;
+    margin: 0 auto;
+    display: block;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 1060px;
+    padding: 2em;
+  }
 
   .App-header {
     text-align: center;  
     padding: 20px;
-    color: #898E8C;
-    font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    color:  gray;
   }
 
   .App-title {
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 320;
+    font-style: italic;
+    line-height: 1.7;
+    color: gray;
+    font-family: "Oxygen", sans-serif;
   }
   
   .App-logo {
@@ -35,20 +49,21 @@ const StyledHeaderContainer = styled.div`
     margin-bottom: 10px;
     display: flex;
   }
+
+
 `;
 
 const CoverPhoto: React.SFC = () => (
-  <StyledHeaderContainer>
-    <StyledLogo>
-      <img src={logo} className="App-logo" alt="logo" />
-    </StyledLogo>
-    <header className="App-header">
-      <h1 className="App-title">3 Energies Massage & Bodywork</h1>
-    </header>
-    <StyledImg>
-      <img src={cover}/>
-    </StyledImg>
-  </StyledHeaderContainer>
+  <StyledContainer>
+    <div className='whitespace'>
+      <header className="App-header">
+        <h1 className="App-title">3 Energies Massage & Bodywork</h1>
+      </header>
+      <StyledImg>
+        <img src={cover}/>
+      </StyledImg>
+    </div>
+  </StyledContainer>
 );
 
 export default CoverPhoto;
