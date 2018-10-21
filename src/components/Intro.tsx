@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 
 const StyledIntro = styled.div`
-  width: 100%
+  width: 100%;
   padding: 20px 0 15px 0 ;
 
   .header {

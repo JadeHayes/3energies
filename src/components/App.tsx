@@ -3,7 +3,9 @@ import styled from 'styled-components';
 import CoverPhoto from './Header';
 import Intro from './Intro'
 import NavBar from './NavBar'
-
+import WhatWeDo from './WhatWeDo'
+// TODO: Set up this template
+// http://demo.themewagon.com/preview/download-free-responsive-html5-portfolio-template
 
 const StyledAppDiv = styled.div`
   .App {
@@ -19,6 +21,7 @@ class App extends React.Component {
         <CoverPhoto/>
         <NavBar/>
         <Intro/>
+        <WhatWeDo/>
       </StyledAppDiv>
     );
   }
