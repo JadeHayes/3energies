@@ -4,6 +4,7 @@ import CoverPhoto from './Header';
 import Intro from './Intro'
 import NavBar from './NavBar'
 import WhatWeDo from './WhatWeDo'
+
 // TODO: Set up this template
 // http://demo.themewagon.com/preview/download-free-responsive-html5-portfolio-template
 const StyledAppWrapper = styled.div`
