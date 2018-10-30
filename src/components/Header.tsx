@@ -31,7 +31,7 @@ const StyledContainer = styled.div`
 
   .App-header {
     text-align: center;  
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
     color:  gray;
   }
 
@@ -49,8 +49,13 @@ const StyledContainer = styled.div`
     margin-bottom: 10px;
     display: flex;
   }
+`;
 
 
+const StyledP = styled.p`
+  color: #B4B7BA;
+  font-size: 16px;
+  font-style: italic;
 `;
 
 const CoverPhoto: React.SFC = () => (
@@ -59,6 +64,9 @@ const CoverPhoto: React.SFC = () => (
       <header className="App-header">
         <h1 className="App-title">3 Energies Massage & Bodywork</h1>
       </header>
+      <StyledP>
+      "Learn to bend, it's better than breaking"
+    </StyledP>
       <StyledImg>
         <img src={cover}/>
       </StyledImg>

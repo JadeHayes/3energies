@@ -29,13 +29,6 @@ const StyledP = styled.p`
   color: #B4B7BA;
 `;
 
-const StyledLastP = styled.p`
-  color: #B4B7BA;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: bold;
-`;
-
 const Intro: React.SFC = () => (
   <StyledIntro>
     <h1 className='header'>People are beings of action...</h1>
@@ -44,9 +37,6 @@ const Intro: React.SFC = () => (
         and tend to neglect our own bodies. Muscles become overtaxed then fatigue sets-in and the body begins to ache,
         and the next thing you know, doing anything that requires physical or mental energy is out of the question. 
     </StyledP>
-    <StyledLastP>
-      "Learn to bend, it's better than breaking"
-    </StyledLastP>
       <hr/>
   </StyledIntro>
 );
