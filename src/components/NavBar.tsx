@@ -56,16 +56,14 @@ const NavBar: React.SFC = () => (
               <li className="nav-item">
                 <a className="nav-link" id="bootstrap-overrides" href="#">Rates & Services</a>
               </li>
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="bootstrap-overrides navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  About Us
-                </a>
-                  <div className="dropdown-menu"  aria-labelledby="navbarDropdown">
-                    <a className="dropdown-item" id="bootstrap-overrides" href="#">Contact Us</a>
-                    <a className="dropdown-item" id="bootstrap-overrides" href="#">Testimonials</a>
-                    <div className="dropdown-divider"/>
-                    <a className="dropdown-item" id="bootstrap-overrides" href="#">Local Resources</a>
-                  </div>
+              <li className="nav-item">
+                <a className="nav-link" id="bootstrap-overrides" href="#">Testimonials</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" id="bootstrap-overrides" href="#">Local Resources</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" id="bootstrap-overrides" href="#">Contact Us</a>
               </li>
             </ul>
           </div>

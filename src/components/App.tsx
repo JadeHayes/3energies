@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import Footer from './Footer'
 import CoverPhoto from './Header';
 import Intro from './Intro'
 import NavBar from './NavBar'
@@ -9,8 +10,8 @@ import WhatWeDo from './WhatWeDo'
 // http://demo.themewagon.com/preview/download-free-responsive-html5-portfolio-template
 const StyledAppWrapper = styled.div`
   background: #e8e8e8;
-      width: 100%;
-    height: 100%
+  width: 100%;
+  height: 100%
 `;
 
 const StyledAppDiv = styled.div`
@@ -56,6 +57,7 @@ class App extends React.Component {
           <CoverPhoto/>
           <Intro/>
           <WhatWeDo/>
+          <Footer/>
         </StyledAppDiv>
       </StyledAppWrapper>
     );

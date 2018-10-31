@@ -12,6 +12,7 @@ const StyledInfo = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
   max-width: 1060px;
+  color: rgb(179, 179, 179);
 
   .header {
     font-family: Fjalla One;
@@ -26,7 +27,6 @@ const StyledInfo = styled.div`
   }
 
   p {
-    color: rgb(179, 179, 179);
     line-height: 25px;
   }
 
@@ -39,7 +39,7 @@ const WhatWeDo: React.SFC = () => (
   <StyledInfo>
     <Grid>
       <Row>
-          <Col xs={6}>
+          <Col xs={12} md={6}>
             <h3 className='header'>What We Do</h3>
               <h5>Massage massage massage & bodywork</h5>
                 <p>And how does this differ from the massage guys down the block? Well, It's all about Myofacial Release. 
@@ -53,7 +53,7 @@ const WhatWeDo: React.SFC = () => (
                   work hurts people." So if you want an effective massage to alleviate your aches and pains without being worked-over, 
                   or receive the best-of-the-best in relaxation massage, come to 3 Energies Massage and Bodywork.</p>
           </Col>
-        <Col xs={6}>
+        <Col xs={12} md={6}>
           <h3 className='header'>Wellness All the Way Around</h3>
             <p>
               <b>Birthday Offerings</b> ~ All existing clients can book a 60–minute massage during your birthday month and receive 
@@ -67,7 +67,7 @@ const WhatWeDo: React.SFC = () => (
                your 90-minute session is $85.
           </p>
           <div className='location'>
-            <p>We are located in Mission Bay Chiropractic where services are available, such as:
+            <p>We are located in Mission Bay Chiropractic where services are available, such as:</p>
               <ul>
                 <li>Chiropractic examinations & adjustments</li>
                 <li> Health & Wellness Report</li>
@@ -78,7 +78,6 @@ const WhatWeDo: React.SFC = () => (
                   Call text or email for an appt today:
                   650-483-6169  –or–  gina@3energiesmb.com
               <i>Gift Certificates available</i>
-            </p>
           </div>
         </Col>
       </Row>
