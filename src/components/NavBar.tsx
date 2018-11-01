@@ -18,6 +18,38 @@ const StyledNav = styled.div`
   color: gray;
   background: #e8e8e8;
   padding: 5em 0 0 0;
+
+  .navbar-light .navbar-nav 
+  .nav-link:focus, .navbar-light 
+  .navbar-nav .nav-link:hover {
+    color: rgb(56,56,56);
+  }
+
+  ul li a::after {
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 80%;
+    height: 2px;
+    background: #66D37E;
+    margin: 0 auto;
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+    transform: translate3d(0, -10px, 0);
+  }
+
+  ul li a:hover:after {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 `;
 
 const StyledNavWrapper = styled.div`
@@ -30,6 +62,10 @@ const StyledNavWrapper = styled.div`
   :selection {
     color: #fff;
     background: #66D37E;
+  }
+
+  li {
+    position: relative;
   }
 `;
 
@@ -51,19 +87,19 @@ const NavBar: React.SFC = () => (
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" id="bootstrap-overrides" href="#">Home <span className="sr-only">(current)</span></a>
+                <a className="nav-link" href="#">Home</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="bootstrap-overrides" href="#">Rates & Services</a>
+                <a className="nav-link" href="#">Rates & Services</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="bootstrap-overrides" href="#">Testimonials</a>
+                <a className="nav-link" href="#">Testimonials</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="bootstrap-overrides" href="#">Local Resources</a>
+                <a className="nav-link" href="#">Local Resources</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" id="bootstrap-overrides" href="#">Contact Us</a>
+                <a className="nav-link" href="#">Contact Us</a>
               </li>
             </ul>
           </div>
