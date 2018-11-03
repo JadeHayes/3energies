@@ -88,6 +88,7 @@ export const StyledGrid = styled.div`
     font-weight: bold;
     font-style: italic;
     font-size: 30px;
+    text-align: center;
   }
 
   .location ul {    

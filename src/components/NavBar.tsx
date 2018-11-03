@@ -106,7 +106,7 @@ const NavBar: React.SFC<{}> = () => {
                 <Link className="nav-link" to="/testimonials">Testimonials</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/locals">Local Resources</Link>
+                <Link className="nav-link" to="/local-resources">Local Resources</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/contact-us">Contact Us</Link>

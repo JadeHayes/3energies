@@ -5,7 +5,7 @@ import AboutUs from './components/AboutUs';
 import App from './components/App';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import WhatWeDo from './components/WhatWeDo';
+import Local from './components/Local';
 
 
 export const AppRouter: React.StatelessComponent<{}> = () => {
@@ -16,7 +16,7 @@ export const AppRouter: React.StatelessComponent<{}> = () => {
           <Switch>
             <Route exact={true} path="/" component={Header} />
             <Route path="/about-us" component={AboutUs} />
-            <Route path="/what-we-do" component={WhatWeDo} />
+            <Route path="/local-resources" component={Local} />
           </Switch>
           <Footer/>
         </div>
