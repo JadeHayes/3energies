@@ -24,8 +24,7 @@ const logos = () => {
     </span>
   )
 }
-
-const Footer: React.SFC = () => (
+const Footer: React.SFC<{}> = () => (
   <InnerAppWrapper>
     <div className='whitespace'>
       <div>{ logos() }</div>

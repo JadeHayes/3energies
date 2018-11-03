@@ -17,7 +17,7 @@ const StyledP = styled.p`
   font-style: italic;
 `;
 
-const CoverPhoto: React.SFC = () => (
+const CoverPhoto: React.SFC<{}> = () => (
   <InnerAppWrapper>
     <div className='whitespace'>
       <header className="App-header">

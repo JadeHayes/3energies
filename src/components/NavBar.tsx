@@ -1,7 +1,15 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
+
 import styled from 'styled-components';
 import '../static/App.css';
 import logo from '../static/logo.png';
+
+// TODO: 
+// Change cover photo & everything present except for the footer to 'Home'
+// Make the home page show on "/"" exact path only
+// Style each component using common style
+// Use react router to render components
 
 const StyledNavLogo = styled.div`
   img {
@@ -73,33 +81,35 @@ const Wrapper = styled.div`
   background: #e8e8e8;
 `;
 
-const NavBar: React.SFC = () => (
+const NavBar: React.SFC<{}> = () => {
+  return (
     <Wrapper>
       <StyledNav>
         <StyledNavWrapper className="navbar navbar-expand-lg navbar-light">
-          <StyledNavLogo>
-            <img src={logo}/>
-          </StyledNavLogo>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"/>
             </button>
-
+            <Link to="/#">
+              <StyledNavLogo>
+                <img src={logo}/>
+              </StyledNavLogo>
+            </Link>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#">Home</a>
+                <Link className="nav-link" to="/about-us">About us</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Rates & Services</a>
+                <Link className="nav-link" to="/rates">Rates & Services</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Testimonials</a>
+                <Link className="nav-link" to="/testimonials">Testimonials</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Local Resources</a>
+                <Link className="nav-link" to="/locals">Local Resources</Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">Contact Us</a>
+                <Link className="nav-link" to="/contact-us">Contact Us</Link>
               </li>
             </ul>
           </div>
@@ -107,5 +117,6 @@ const NavBar: React.SFC = () => (
       </StyledNav>
     </Wrapper>
     );
+}
 
-export default NavBar;
+export default NavBar

@@ -34,8 +34,7 @@ const StyledInfo = styled.div`
     margin: 20px 0 20px 0;
   }
 `;
-
-const WhatWeDo: React.SFC = () => (
+const WhatWeDo: React.SFC<{}> = () => (
   <StyledInfo>
     <Grid>
       <Row>
