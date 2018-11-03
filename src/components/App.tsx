@@ -1,10 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import Footer from './Footer'
-import CoverPhoto from './Header';
-import Intro from './Intro'
+
 import NavBar from './NavBar'
-import WhatWeDo from './WhatWeDo'
 
 // TODO: Set up this template
 // http://demo.themewagon.com/preview/download-free-responsive-html5-portfolio-template
@@ -51,15 +48,11 @@ const StyledNavBar = styled(NavBar)`
 class App extends React.Component {
   public render() {
     return (
-      <StyledAppWrapper>
-        <StyledAppDiv className="App" id="page">
-          <StyledNavBar/>
-          <CoverPhoto/>
-          <Intro/>
-          <WhatWeDo/>
-          <Footer/>
-        </StyledAppDiv>
-      </StyledAppWrapper>
+        <StyledAppWrapper>
+          <StyledAppDiv className="App" id="page">
+            <StyledNavBar/>
+          </StyledAppDiv>
+        </StyledAppWrapper>
     );
   }
 }

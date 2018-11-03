@@ -2,6 +2,8 @@ import * as React from 'react';
 import styled from 'styled-components';
 import cover from '../static/cover.png';
 import { InnerAppWrapper } from './Common';
+import Intro from './Intro';
+import WhatWeDo from './WhatWeDo';
 
 const StyledImg = styled.div`
   img {
@@ -15,6 +17,7 @@ const StyledP = styled.p`
   color: #B4B7BA;
   font-size: 16px;
   font-style: italic;
+  text-align: center;
 `;
 
 const CoverPhoto: React.SFC<{}> = () => (
@@ -24,11 +27,14 @@ const CoverPhoto: React.SFC<{}> = () => (
         <h1 className="App-title">3 Energies Massage & Bodywork</h1>
       </header>
       <StyledP>
-      "Learn to bend, it's better than breaking"
-    </StyledP>
+        "Learn to bend, it's better than breaking"
+      </StyledP>
       <StyledImg>
         <img src={cover}/>
       </StyledImg>
+      <Intro/>
+      <hr/>
+      <WhatWeDo/>
     </div>
   </InnerAppWrapper>
 );

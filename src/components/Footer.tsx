@@ -8,7 +8,7 @@ import { InnerAppWrapper } from './Common';
 
 const StyledLogo = styled.img`
   max-width: 150px;
-  padding: 0 15px 25px 15px;
+  padding: 0 15px 18px 15px;
 `;
 
 const members = [ ELogo, AMTA , Esalen , NCBTMB ];
@@ -26,11 +26,13 @@ const logos = () => {
 }
 const Footer: React.SFC<{}> = () => (
   <InnerAppWrapper>
-    <div className='whitespace'>
+    <div className="whitespace">
       <div>{ logos() }</div>
-      Member of AMTA, EMBA, NCBTMB. 3Energies Massage and Bodywork
-      <p>Copyrightⓒ 2007, 2008, 2009, 2010, 2011, 2012, 2014. </p>
-      <p><i>All rights reserved.</i></p>
+        <small>
+          Member of AMTA, EMBA, NCBTMB. 3Energies Massage and Bodywork
+          <p>Copyrightⓒ 2007, 2008, 2009, 2010, 2011, 2012, 2014. </p>
+          <p><i>All rights reserved.</i></p>
+        </small>
       <hr/>
       <a href='https://goo.gl/maps/4tKpRv33Fpv'>
         330 Townsend Street, Suite 232

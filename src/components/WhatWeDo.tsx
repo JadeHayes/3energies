@@ -1,41 +1,9 @@
 import * as React from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
-import styled from 'styled-components';
+import { StyledGrid } from './Common';
 
-const StyledInfo = styled.div`
-  width: 100%;
-  padding: 20px 0 15px 0 ;
-  background-color: white;
-  margin: 0 auto;
-  padding: 2em;
-  display: block;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  max-width: 1060px;
-  color: rgb(179, 179, 179);
-
-  .header {
-    font-family: Fjalla One;
-    color: #44502a;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 30px;
-  }
-
-  .location {
-    background-color: rgb(33, 37, 41, .03);
-  }
-
-  p {
-    line-height: 25px;
-  }
-
-  hr {
-    margin: 20px 0 20px 0;
-  }
-`;
 const WhatWeDo: React.SFC<{}> = () => (
-  <StyledInfo>
+  <StyledGrid>
     <Grid>
       <Row>
           <Col xs={12} md={6}>
@@ -81,7 +49,7 @@ const WhatWeDo: React.SFC<{}> = () => (
         </Col>
       </Row>
     </Grid>
-  </StyledInfo>
+  </StyledGrid>
 );
 
 export default WhatWeDo;

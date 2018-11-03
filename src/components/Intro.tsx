@@ -37,7 +37,6 @@ const Intro: React.SFC = () => (
         and tend to neglect our own bodies. Muscles become overtaxed then fatigue sets-in and the body begins to ache,
         and the next thing you know, doing anything that requires physical or mental energy is out of the question. 
     </StyledP>
-      <hr/>
   </StyledIntro>
 );
 

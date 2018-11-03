@@ -62,7 +62,7 @@ const StyledNav = styled.div`
 
 const StyledNavWrapper = styled.div`
   max-width: 1060px;
-  margin: 0 auto;
+  margin: auto;
   margin-bottom: 1em;
   background: #fff;
   padding: 34px 30px;
