@@ -97,19 +97,19 @@ export const reviews = [
     "tagline": 'How do I convey, to you readers'
   },
   {
-    "body": "<p> I agree with Michael B. and most of the others completely and I also don't know how to convey how5 Star Rating: Highly Recommended amazing Gina is!! So I guess all I can do is share my \
+    "body": " I agree with Michael B. and most of the others completely and I also don't know how to convey how5 Star Rating: Highly Recommended amazing Gina is!! So I guess all I can do is share my \
             experience and how Gina changed my life. I initially injured by back while playing volleyball in college about 8 years ago. I've been to multiple doctors, phyisical therapists, chiropractors, etc., \
             yet none were able to clearly identify the source of the problem. Instead, I was given the typical western medicine treatment plan of pain killers and muscle relaxers to get through each season \
              (if any of you were collegiate athletes, I\'m sure you know what thats like!), along with the basic PT therapy (stim, strech, ice, repeat) 5 days a week. Not surprisingly, until I met with Gina, \
-             the problem never went away and the pain would still come and go - sometimes to the point that I was unable to walk.</p> \
-            <p> A couple weeks before our wedding last year, my back was beginning to act up, so my wonderful husband did some research and came across Gina and 3 Energies Massage. Although \
-              I was skeptical, as I have been to many massage places in need of back pain relief, my husband convinced me to give it one last try. All I can say is I am SO thankful I did!!! </p> \
-            <p> Gina did a preliminary assessment of my full body to identify problem areas. Combined with the questions she asked about my initial injury/problems, she was able to identify the source of the \
+             the problem never went away and the pain would still come and go - sometimes to the point that I was unable to walk. \
+             A couple weeks before our wedding last year, my back was beginning to act up, so my wonderful husband did some research and came across Gina and 3 Energies Massage. Although \
+              I was skeptical, as I have been to many massage places in need of back pain relief, my husband convinced me to give it one last try. All I can say is I am SO thankful I did!!!  \
+             Gina did a preliminary assessment of my full body to identify problem areas. Combined with the questions she asked about my initial injury/problems, she was able to identify the source of the \
               initial injury and a treatment plan....and it WORKED! when I walked in that day, I was unable to touch my toes, unable to bend or twist to my left, and in a moderate to high amount of pain. \
               But after Gina\'s massage therapy, all of that changed. The best part was that it was a long lasting fix. Its been almost 12 months since I visited Gina and I have been almost entirely pain free \
-              with full range of motion. It has been lifechanging - I had accepted that I would just be in pain the rest of my life, but thankfully Gina has changed that. </p> \
-            <p>You may ask why I\'m writing this now... well besides being a procrastinator...  I managed to pull something in my back two days ago during a workout and I now know that I don\'t have to \
-            live with back pain - so I\'m visiting Gina for another session :)﻿</p>",
+              with full range of motion. It has been lifechanging - I had accepted that I would just be in pain the rest of my life, but thankfully Gina has changed that.  \
+            You may ask why I\'m writing this now... well besides being a procrastinator...  I managed to pull something in my back two days ago during a workout and I now know that I don\'t have to \
+            live with back pain - so I\'m visiting Gina for another session :)﻿",
     "name":  "Meghan H",
     "tagline": 'I\'m not sure 5 starts is enough!!'
   },
