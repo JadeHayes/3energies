@@ -65,8 +65,12 @@ export const InnerAppWrapper = styled.div`
     text-align: center;
   }
 
-  .contact-info {
+  .centered {
     text-align: center;
+  }
+
+  .left-justified {
+    text-align: left;
   }
 `;
 

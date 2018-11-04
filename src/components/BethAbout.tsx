@@ -28,7 +28,7 @@ const BethAbout: React.SFC<{}> = () => (
         Serving the Peninsula for In-home Massage from San Francisco to San Jose. Call for a consultation and 
         appointment M–F 10am–6pm.
       </p>
-      <p className="contact-info">
+      <p className="centered-">
         Beth O'Boyle, NCMT <br/>
         <a href="mailto:bethoboy@3energiesmb.com?subject=3Energies MB Inquiry">bethoboy@3energiesmb.com</a>
         <p>408.728.0262</p>
