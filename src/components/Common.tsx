@@ -69,6 +69,15 @@ export const InnerAppWrapper = styled.div`
     text-align: center;
   }
 
+  .header {
+    font-family: Fjalla One;
+    color: #44502a;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+  }
+  
   .left-justified {
     text-align: left;
   }

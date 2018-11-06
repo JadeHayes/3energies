@@ -3,6 +3,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 
 import AboutUs from './components/AboutUs';
 import App from './components/App';
+import ContactUs from './components/ContactUs';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Local from './components/Local';
@@ -19,6 +20,7 @@ export const AppRouter: React.StatelessComponent<{}> = () => {
             <Route path="/about-us" component={ AboutUs } />
             <Route path="/testimonials" component={ Testimonials } />
             <Route path="/local-resources" component={ Local } />
+            <Route path="/contact-us" component={ ContactUs } />          
           </Switch>
           <Footer/>
         </div>

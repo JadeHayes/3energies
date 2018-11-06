@@ -7,7 +7,7 @@ import GinaAbout from './GinaAbout';
 const AboutUs: React.SFC<{}> = () => (
   <InnerAppWrapper>
     <div className="whitespace">
-      <h3>About Us</h3>
+      <h3 className='header'>About Us</h3>
       <p>The philosophy of 3Energies Massage & Bodywork is to provide the local community with therapeutic massage designed specifically for your individual needs.
       In addition to massage, we present each person with the findings and knowledge about their body to bring awareness to better support and maintain their anatomical structure. </p>
       <p>Our Mission Statement:</p>

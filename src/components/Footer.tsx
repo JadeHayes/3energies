@@ -9,6 +9,7 @@ import { InnerAppWrapper } from './Common';
 const StyledLogo = styled.img`
   max-width: 150px;
   padding: 0 15px 18px 15px;
+  margin: 0 25px 0 25px;
 `;
 
 const members = [ ELogo, AMTA , Esalen , NCBTMB ];
