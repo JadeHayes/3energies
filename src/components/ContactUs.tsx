@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
-import { InnerAppWrapper, StyledGrid } from './Common';
+import { InnerAppWrapper, StyledGrid } from '../static/Common';
 import ContactForm from './ContactForm';
 import ContactInfo from './ContactInfo';
 

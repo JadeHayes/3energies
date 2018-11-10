@@ -1,6 +1,6 @@
 import * as React from 'react';
+import { InnerAppWrapper, StyledImg } from '../static/Common';
 import gina from '../static/gina.png';
-import { InnerAppWrapper, StyledImg } from './Common';
 
 const GinaAbout: React.SFC<{}> = () => (
   <InnerAppWrapper>

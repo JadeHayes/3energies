@@ -1,10 +1,10 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { InnerAppWrapper } from '../static/Common';
 import ELogo from '../static/logos/3ELogo_banner.jpg';
 import AMTA from '../static/logos/AMTA.jpg';
 import Esalen from '../static/logos/Esalen.jpg';
 import NCBTMB from '../static/logos/NCBTMB.gif';
-import { InnerAppWrapper } from './Common';
 
 const StyledLogo = styled.img`
   max-width: 150px;

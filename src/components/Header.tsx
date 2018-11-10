@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { InnerAppWrapper } from '../static/Common';
 import cover from '../static/cover.png';
-import { InnerAppWrapper } from './Common';
 import Intro from './Intro';
 import WhatWeDo from './WhatWeDo';
 

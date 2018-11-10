@@ -25,7 +25,11 @@ const StyledNav = styled.div`
   line-height: 1.7;
   color: gray;
   background: #e8e8e8;
-  padding: 5em 0 0 0;
+  padding: 4em 0 0 0;
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+}
 
   .navbar-light .navbar-nav 
   .nav-link:focus, .navbar-light 
@@ -41,6 +45,7 @@ const StyledNav = styled.div`
     content: '';
     width: 80%;
     height: 2px;
+    max-width: 90px;
     background: #66D37E;
     margin: 0 auto;
     opacity: 0;

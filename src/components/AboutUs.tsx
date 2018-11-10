@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
+import { InnerAppWrapper, StyledGrid } from '../static/Common';
 import BethAbout from './BethAbout';
-import { InnerAppWrapper, StyledGrid } from './Common';
 import GinaAbout from './GinaAbout';
 
 const AboutUs: React.SFC<{}> = () => (

@@ -1,8 +1,8 @@
 import * as React from 'react';
 import styled from 'styled-components';
+import { InnerAppWrapper } from '../static/Common';
 import  { reviews } from '../static/Reviews';
 import stars from '../static/stars.png'
-import { InnerAppWrapper } from './Common';
 
 const StyledHeader = styled.div`
   margin-bottom: 0;

@@ -21,7 +21,7 @@ export const InnerAppWrapper = styled.div`
     flex-wrap: nowrap;
     max-width: 1060px;
     padding: 2em;
-    text-align: center;
+    text-align: justified;
   }
 
   .light-background {
@@ -67,6 +67,10 @@ export const InnerAppWrapper = styled.div`
 
   .centered {
     text-align: center;
+  }
+
+  .right {
+    text-align: right;
   }
 
   .header {

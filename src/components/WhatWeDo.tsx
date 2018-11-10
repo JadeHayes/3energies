@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
-import { StyledGrid } from './Common';
+import { StyledGrid } from '../static/Common';
 
 const WhatWeDo: React.SFC<{}> = () => (
   <StyledGrid>

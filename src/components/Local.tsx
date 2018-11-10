@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
 import styled from 'styled-components';
-import { InnerAppWrapper, StyledGrid } from './Common';
+import { InnerAppWrapper, StyledGrid } from '../static/Common';
 
 const StyledA = styled.a`
   font-weight: 500;
