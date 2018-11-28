@@ -18,7 +18,6 @@ const logos = () => {
     <span>
       {
         members.map((logo, index) => {
-          // tslint:disable-next-line:jsx-key
           return <StyledLogo key= {index} src={ logo }/>
         })
       }
