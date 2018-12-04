@@ -21,7 +21,7 @@ const StyledNavLogo = styled.div`
 const StyledNav = styled.div`
   font-family: "Oxygen", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.7;
   color: gray;
   background: #e8e8e8;

@@ -17,12 +17,12 @@ export const certificates = [
   },
   {
     "photo": cupid,
-    "tagline": '',
+    "tagline": 'For someone special',
     "title": "Happy Valentine's Day",
   },
   {
     "photo": ginger_blossom,
-    "tagline": '',
+    "tagline": 'Give the gift of wellness',
     "title": "A Gift",
   },
   {

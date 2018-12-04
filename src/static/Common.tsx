@@ -85,6 +85,18 @@ export const InnerAppWrapper = styled.div`
   .left-justified {
     text-align: left;
   }
+    
+  .certificates {
+    height: 65em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      height: 100%;
+      flex-wrap: nowrap;
+  }
 `;
 
 export const StyledGrid = styled.div`
