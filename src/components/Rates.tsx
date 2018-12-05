@@ -1,16 +1,33 @@
 import * as React from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
+import styled from 'styled-components';
 import { InnerAppWrapper, StyledGrid } from '../static/Common';
 import Menu from './Menu';
+
+const StyledHeader = styled.h3`
+  font-family: Fjalla One;
+  color: #44502a;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 1em;
+`;
+
+const StyledSubHeader = styled.h5`
+  text-align: center;
+  margin: .5em 0 1em 0;
+  font-style: italic;
+`;
 
 const ContactUs: React.SFC<{}> = () => (
   <InnerAppWrapper>
     <div className="whitespace">
-      <h3 className='header'>Rates + Services</h3>
+      <StyledHeader>Rates + Services</StyledHeader>
       <StyledGrid>
         <Grid>
           <Row>
-            <h4 className='centered'>Benefits of Therapeutic Touch</h4>
+            <StyledSubHeader>Benefits of Therapeutic Touch</StyledSubHeader>
               <p>There are many beneficial effects of massage, including pain relief,
                 stress reduction, and also relief of many diseases. It can be confusing 
                 to know which type of massage will work best for you. The goal at 3Energies 
@@ -37,7 +54,7 @@ const ContactUs: React.SFC<{}> = () => (
               </p>
            </Row>
            <hr/>
-           <Col xs={12} md={6}>
+           <Col xs={12}>
             <Menu/>
            </Col>
         </Grid>

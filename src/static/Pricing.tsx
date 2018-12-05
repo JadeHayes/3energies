@@ -7,7 +7,7 @@ export const pricing = [
     "title": 'Reflexology',
   },
   {
-    "info": "Great for employee appreciation to ensure that relaxed bodies remain creative, happy and productive. Call today.",
+    "info": "A wonderful employee appreciation gift to ensure that relaxed bodies stay creative, happy and productive. Call today.",
     "price": 416,
     "shortDesc": "Onsite, 3-hours distributed time amongst clients",
     "title": 'Chair Massage',
