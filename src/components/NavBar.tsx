@@ -37,6 +37,16 @@ const StyledNav = styled.div`
     color: rgb(56,56,56);
   }
 
+  #dropdownRates {
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+      width: 100%;
+      background-color: white;
+      color: blackl;
+      text-size: 14px;
+    }
+  }
+
   ul li a::after {
     position: absolute;
     bottom: 4px;
@@ -53,6 +63,10 @@ const StyledNav = styled.div`
     opacity: 0;
     transition: transform 0.3s, opacity 0.3s;
     transform: translate3d(0, -10px, 0);
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   ul li a:hover:after {
@@ -74,7 +88,6 @@ const StyledNavWrapper = styled.div`
   background: #fff;
   padding: 34px 30px;
 
-
   ul > li.has-dropdown .dropdown-menu:before {
     bottom: 100%;
     left: 40px;
@@ -90,6 +103,10 @@ const StyledNavWrapper = styled.div`
     display: block;
     height: 16px;
     width: 16px;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
   }
 
   *:before, *:after {
@@ -155,10 +172,10 @@ const NavBar: React.SFC<{}> = () => {
                 <Link className="nav-link" to="/about-us">About us</Link>
               </li>
               <li className="nav-item has-dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                <Link className="nav-link dropdown-toggle" to="/rates" role="button" data-toggle="dropdown">
                   Services
-                </a>
-                <StyledDropDown className="dropdown-menu">
+                </Link>
+                <StyledDropDown className="dropdown-menu" id="dropdownRates">
                 <li>
                   <Link className="nav-link" to="/rates">Rates & Services</Link>
                 </li>
