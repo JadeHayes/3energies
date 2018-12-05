@@ -43,7 +43,9 @@ const StyledNav = styled.div`
     left: 0;
     right: 0;
     content: '';
-    width: 80%;
+    width: 75%;
+    text-align: center;
+    border-top: 0;
     height: 2px;
     max-width: 90px;
     background: #66D37E;
@@ -72,6 +74,31 @@ const StyledNavWrapper = styled.div`
   background: #fff;
   padding: 34px 30px;
 
+
+  ul > li.has-dropdown .dropdown-menu:before {
+    bottom: 100%;
+    left: 40px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: rgb(216, 216, 216);
+    border-width: 8px;
+    margin-left: -8px;
+    display: block;
+    height: 16px;
+    width: 16px;
+  }
+
+  *:before, *:after {
+    box-sizing: border-box;
+  }
+
+  .has-dropdown:hover .dropdown-menu {
+    display: block;
+  }
   :selection {
     color: #fff;
     background: #66D37E;
@@ -85,6 +112,29 @@ const StyledNavWrapper = styled.div`
 const Wrapper = styled.div`
   background: #e8e8e8;
 `;
+
+const StyledDropDown = styled.div`
+  display: none;
+  line-height: 1;
+  text-transform: none;
+  font-size: 13px;
+  letter-spacing: 0;
+  width: 120px;
+  box-shadow: 0px 8px 25px -9px rgba(0, 0, 0, 0.45);
+  position: absolute;
+  top: 45px;
+  text-align: left;
+  background: rgb(232, 232, 232);
+  padding: 12px;
+  border-radius: 3px;
+  transition: 0s;
+  text-align: center;
+  border-color: rgb(232, 232, 232, .2);
+
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0,0,0,.95);
+  }
+  `;
 
 const NavBar: React.SFC<{}> = () => {
   return (
@@ -100,24 +150,32 @@ const NavBar: React.SFC<{}> = () => {
               </StyledNavLogo>
             </Link>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav mr-auto ">
               <li className="nav-item">
                 <Link className="nav-link" to="/about-us">About us</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/rates">Rates & Services</Link>
+              <li className="nav-item has-dropdown">
+                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                  Services
+                </a>
+                <StyledDropDown className="dropdown-menu">
+                <li>
+                  <Link className="nav-link" to="/rates">Rates & Services</Link>
+                </li>
+                <li>
+                  <Link className="nav-link" to="/certificates">Gift Certificates</Link>
+                </li>
+                  <div className="dropdown-divider"/>
+                <li>
+                  <Link className="nav-link" to="/local-resources">Local Resources</Link>
+                </li>
+                </StyledDropDown>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/testimonials">Testimonials</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/certificates">Gift Certificates</Link>
-              </li>
-              <li className="nav-item">
                 <Link className="nav-link" to="/contact-us">Contact Us</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/local-resources">Local Resources</Link>
               </li>
             </ul>
           </div>

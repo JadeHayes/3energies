@@ -23,7 +23,8 @@ const review = () => {
         reviews.map((rev, index) => {
           return ( 
             <div key={index}>
-                  <p className='tagline'> { rev.tagline } &nbsp; <img src={ stars }/> </p> 
+                  <img src={ stars }/> <br/>
+                  <p className='tagline'> { rev.tagline } </p> 
                   <p> { rev.body } </p> 
                   <p> - { rev.name } </p> 
             </div>
