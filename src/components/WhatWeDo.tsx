@@ -1,6 +1,11 @@
 import * as React from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
+import styled from 'styled-components';
 import { StyledGrid } from '../static/Common';
+
+const StyledH4 = styled.h6`
+  font-style: italic;
+`;
 
 const WhatWeDo: React.SFC<{}> = () => (
   <StyledGrid>
@@ -8,7 +13,7 @@ const WhatWeDo: React.SFC<{}> = () => (
       <Row>
           <Col xs={12} md={6}>
             <h3 className='header'>What We Do</h3>
-              <h5>Massage massage massage & bodywork</h5>
+              <StyledH4>Massage massage massage & bodywork</StyledH4>
                 <p>And how does this differ from the massage guys down the block? Well, It's all about Myofacial Release. 
                   As Trigger-Point Release Specialists our objective is to release locked muscles in the most effective means 
                   possible icluding Active Release (ART), Traeggers, Swedish, and Esalen. We work on clients with varying 

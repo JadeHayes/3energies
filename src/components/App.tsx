@@ -34,7 +34,6 @@ const StyledAppDiv = styled.div`
     font-weight: 300;
     font-size: 14px;
     line-height: 1.7;
-    color: gray;
     background: #e8e8e8;
   }
 `;

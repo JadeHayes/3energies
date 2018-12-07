@@ -12,6 +12,10 @@ const StyledLogo = styled.img`
   margin: 0 25px 0 25px;
 `;
 
+const StyledFooter = styled.div`
+  text-align: center;
+`;
+
 const members = [ ELogo, AMTA , Esalen , NCBTMB ];
 const logos = () => {
   return (
@@ -26,7 +30,7 @@ const logos = () => {
 }
 const Footer: React.SFC<{}> = () => (
   <InnerAppWrapper>
-    <div className="whitespace">
+    <StyledFooter className="whitespace">
       <div>{ logos() }</div>
         <small>
           Member of AMTA, EMBA, NCBTMB. 3Energies Massage and Bodywork
@@ -43,7 +47,7 @@ const Footer: React.SFC<{}> = () => (
         &nbsp; fax: 415-484-7166
       </div>
       <a href='mailto:gina@3energiesmb.com?Subject=Massage%20inquiry'>gina@3energiesmb.com</a>
-    </div>
+    </StyledFooter>
   </InnerAppWrapper>
 );
 

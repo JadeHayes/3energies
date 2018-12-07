@@ -16,27 +16,25 @@ const StyledIntro = styled.div`
   .header {
     font-family: "Oxygen", sans-serif;
     font-weight: 300;
-    color: #44502a;
     font-size: 22px;
   }
 `;
 const StyledSubHeader = styled.p`
-  color:#BCBCBE;
   font-style: italic;
+  text-align: center;
+  margin-bottom: 2em;
+  color: rgb(64, 64, 64);
 `;
 
-const StyledP = styled.p`
-  color: #B4B7BA;
-`;
 
 const Intro: React.SFC = () => (
   <StyledIntro>
     <h1 className='header'>People are beings of action...</h1>
-    <StyledSubHeader>because we lead such active lifestyles it is important to keep therapeutic touch in the picture </StyledSubHeader>
-    <StyledP> Often times when life gets hectic we humans respond by doing everything possible to make things happen 
+    <StyledSubHeader>we lead such active lifestyles it is important to keep therapeutic touch in the picture </StyledSubHeader>
+    <p> Often times when life gets hectic we humans respond by doing everything possible to make things happen 
         and tend to neglect our own bodies. Muscles become overtaxed then fatigue sets-in and the body begins to ache,
         and the next thing you know, doing anything that requires physical or mental energy is out of the question. 
-    </StyledP>
+    </p>
   </StyledIntro>
 );
 

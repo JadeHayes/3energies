@@ -9,7 +9,6 @@ const StyledHeader = styled.div`
   padding-bottom: -20px;
   font-weight: 400;
   font-family: Fjalla One;
-  color: #44502a;
   font-weight: bold;
   font-style: italic;
   font-size: 30px;

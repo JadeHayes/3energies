@@ -33,7 +33,6 @@ const StyledTagline = styled.p`
   font-family: "Oxygen",sans-serif;
   font-weight: 400;
   font-style: italic;
-  color: #44502a;
   margin-top: .5em;
   font-size: 14px;
 `;

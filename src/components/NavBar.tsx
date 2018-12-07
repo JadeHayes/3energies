@@ -23,7 +23,6 @@ const StyledNav = styled.div`
   font-weight: 300;
   font-size: 15px;
   line-height: 1.7;
-  color: gray;
   background: #e8e8e8;
   padding: 4em 0 0 0;
 
@@ -139,7 +138,7 @@ const StyledDropDown = styled.div`
   width: 120px;
   box-shadow: 0px 8px 25px -9px rgba(0, 0, 0, 0.45);
   position: absolute;
-  top: 45px;
+  top: 40px;
   text-align: left;
   background: rgb(232, 232, 232);
   padding: 12px;
@@ -147,6 +146,10 @@ const StyledDropDown = styled.div`
   transition: 0s;
   text-align: center;
   border-color: rgb(232, 232, 232, .2);
+
+  :hover {
+    display: block;
+  }
 
   .navbar-light .navbar-nav .nav-link {
     color: rgba(0,0,0,.95);

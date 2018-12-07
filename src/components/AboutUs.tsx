@@ -1,9 +1,18 @@
 import * as React from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
+import styled from 'styled-components';
 import { InnerAppWrapper, StyledGrid } from '../static/Common';
 import BethAbout from './BethAbout';
 import GinaAbout from './GinaAbout';
 
+const StyledCol= styled(Col)`
+  text-align: center;
+`;
+
+const StyledHr = styled.hr`
+  margin-top: 3em;
+  width: 80%;
+`;
 const AboutUs: React.SFC<{}> = () => (
   <InnerAppWrapper>
     <div className="whitespace">
@@ -12,15 +21,16 @@ const AboutUs: React.SFC<{}> = () => (
       In addition to massage, we present each person with the findings and knowledge about their body to bring awareness to better support and maintain their anatomical structure. </p>
       <p>Our Mission Statement:</p>
       <p className="tagline">Enhance life with therapeutic touch and awareness one massage at a time</p>
+      <StyledHr/>
       <StyledGrid>
         <Grid>
           <Row>
-            <Col xs={12} md={6}>
+            <StyledCol xs={12} md={6}>
               <GinaAbout/>
-            </Col>
-            <Col xs={12} md={6}>
+            </StyledCol>
+            <StyledCol xs={12} md={6}>
               <BethAbout/>
-            </Col>
+            </StyledCol>
           </Row>
         </Grid>
       </StyledGrid>

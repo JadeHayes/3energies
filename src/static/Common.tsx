@@ -6,7 +6,6 @@ export const InnerAppWrapper = styled.div`
   font-weight: 300;
   font-size: 14px;
   line-height: 1.7;
-  color: gray;
   align-items: center;
 
   a {
@@ -22,24 +21,19 @@ export const InnerAppWrapper = styled.div`
     max-width: 1060px;
     padding: 2em;
     text-align: justified;
+    color: #696969;
   }
 
   .light-background {
     background-color: white;
   }
 
-  .App-header {
-    text-align: center;  
-    padding: 20px 20px 0px 20px;
-    color:  gray;
-  }
 
   .App-title {
     font-size: 24px;
     font-weight: 320;
     font-style: italic;
     line-height: 1.7;
-    color: gray;
     text-align: center;
   }
 
@@ -60,7 +54,6 @@ export const InnerAppWrapper = styled.div`
   .title {
     font-family: "Oxygen",sans-serif;
     font-weight: 600;
-    color: #44502a;
     font-size: 16px;
     text-align: center;
   }
@@ -75,7 +68,6 @@ export const InnerAppWrapper = styled.div`
 
   .header {
     font-family: Fjalla One;
-    color: #44502a;
     font-weight: bold;
     font-style: italic;
     font-size: 30px;
@@ -109,11 +101,12 @@ export const StyledGrid = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
   max-width: 1060px;
-  color: rgb(179, 179, 179);
+  color: rgb(105,105,105);
 
   .header {
     font-family: Fjalla One;
-    color: #44502a;
+    color: rgb(64, 64, 64);
+    margin-bottom: 1em;
     font-weight: bold;
     font-style: italic;
     font-size: 30px;
@@ -138,7 +131,6 @@ export const StyledImg = styled.span`
   background-color: white;
 
   img {
-    max-height: 95px;
-    max-width: 57px;
+    max-height: 200px;
   }
 `;

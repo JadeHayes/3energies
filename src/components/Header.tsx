@@ -14,18 +14,23 @@ const StyledImg = styled.div`
 `;
 
 const StyledP = styled.p`
-  color: #B4B7BA;
   font-size: 16px;
   font-style: italic;
   text-align: center;
+  margin-bottom: 1.5em;
+`;
+
+const StyledHeader = styled.header`
+  text-align: center;  
+  padding: 20px 20px 0px 20px;
 `;
 
 const CoverPhoto: React.SFC<{}> = () => (
   <InnerAppWrapper>
     <div className='whitespace'>
-      <header className="App-header">
+      <StyledHeader>
         <h1 className="App-title">3 Energies Massage & Bodywork</h1>
-      </header>
+      </StyledHeader>
       <StyledP>
         "Learn to bend, it's better than breaking"
       </StyledP>
