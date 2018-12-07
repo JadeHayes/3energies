@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Col, Grid, Row } from 'react-flexbox-grid';
 import styled from 'styled-components';
-import { InnerAppWrapper, StyledGrid } from '../static/Common';
+import { ColWrapper, InnerAppWrapper, StyledGrid } from '../static/Common';
 import BethAbout from './BethAbout';
 import GinaAbout from './GinaAbout';
 
@@ -13,24 +13,46 @@ const StyledHr = styled.hr`
   margin-top: 3em;
   width: 80%;
 `;
+
+const StyledH3 = styled.h3`
+  font-family: Fjalla One;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 30px;
+  text-align: center;
+  margin-top: .5em;
+`;
+
+const StyledP = styled.p`
+  text-align: center;
+`;
+
+const StyledContainer = styled.p`
+  padding: 2em;
+`;
+ 
 const AboutUs: React.SFC<{}> = () => (
   <InnerAppWrapper>
     <div className="whitespace">
-      <h3 className='header'>About Us</h3>
-      <p>The philosophy of 3Energies Massage & Bodywork is to provide the local community with therapeutic massage designed specifically for your individual needs.
-      In addition to massage, we present each person with the findings and knowledge about their body to bring awareness to better support and maintain their anatomical structure. </p>
-      <p>Our Mission Statement:</p>
-      <p className="tagline">Enhance life with therapeutic touch and awareness one massage at a time</p>
+      <StyledH3>About Us</StyledH3>
+      <StyledP className="tagline">Enhance life with therapeutic touch and awareness one massage at a time</StyledP>
+      <StyledContainer className='container'>The philosophy of 3Energies Massage & Bodywork is to provide the local community with therapeutic massage 
+        designed specifically for your individual needs. In addition to massage, we present each person with the findings 
+        and knowledge about their body to bring awareness to better support and maintain their anatomical structure. </StyledContainer>
       <StyledHr/>
       <StyledGrid>
         <Grid>
           <Row>
-            <StyledCol xs={12} md={6}>
-              <GinaAbout/>
-            </StyledCol>
-            <StyledCol xs={12} md={6}>
-              <BethAbout/>
-            </StyledCol>
+              <StyledCol xs={8} md={6}>
+                <ColWrapper>
+                  <GinaAbout/>
+                </ColWrapper>
+              </StyledCol>
+              <StyledCol xs={8} md={6}>
+                <ColWrapper>
+                  <BethAbout/>
+                </ColWrapper>
+              </StyledCol>
           </Row>
         </Grid>
       </StyledGrid>

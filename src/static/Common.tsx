@@ -7,6 +7,8 @@ export const InnerAppWrapper = styled.div`
   font-size: 14px;
   line-height: 1.7;
   align-items: center;
+  text-align: justify;
+  text-justify: inter-word;
 
   a {
     color: rgb(29, 48, 48);
@@ -126,11 +128,18 @@ export const StyledGrid = styled.div`
   }
 `;
 
-export const StyledImg = styled.span`
+export const StyledImg = styled.div`
   padding-bottom: 10px;
   background-color: white;
+  text-align: center;
+  magin-bottom: 2em;
 
   img {
     max-height: 200px;
   }
+`;
+
+
+export const ColWrapper = styled.div`
+  width: 95%;
 `;

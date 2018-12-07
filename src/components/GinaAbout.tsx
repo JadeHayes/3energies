@@ -2,6 +2,7 @@ import * as React from 'react';
 import { InnerAppWrapper, StyledImg } from '../static/Common';
 import gina from '../static/gina.png';
 
+
 const GinaAbout: React.SFC<{}> = () => (
   <InnerAppWrapper>
     <div className="light-background">
