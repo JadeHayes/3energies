@@ -30,15 +30,27 @@ const StyledP = styled.p`
 const StyledContainer = styled.p`
   padding: 2em;
 `;
+
+const MissionStatement = styled.div`
+  margin-top: 1em;
+`;
+
  
 const AboutUs: React.SFC<{}> = () => (
   <InnerAppWrapper>
     <div className="whitespace">
       <StyledH3>About Us</StyledH3>
       <StyledP className="tagline">Enhance life with therapeutic touch and awareness one massage at a time</StyledP>
-      <StyledContainer className='container'>The philosophy of 3Energies Massage & Bodywork is to provide the local community with therapeutic massage 
-        designed specifically for your individual needs. In addition to massage, we present each person with the findings 
-        and knowledge about their body to bring awareness to better support and maintain their anatomical structure. </StyledContainer>
+      <StyledContainer className='container'>The philosophy of 3Energies Massage & Bodywork is to provide the local 
+      community with therapeutic massage designed specifically for your individual needs. In addition to massage, 
+      we present each person with the findings and knowledge about their body to bring awareness to better support 
+      and maintain their anatomical structure. 
+      <MissionStatement>
+        Our Mission Statement:<br/>
+        <i>Enhance life with therapeutic touch and awareness one massage at a time.</i>
+      </MissionStatement>
+      </StyledContainer>
+      
       <StyledHr/>
       <StyledGrid>
         <Grid>

@@ -34,7 +34,7 @@ const Footer: React.SFC<{}> = () => (
       <div>{ logos() }</div>
         <small>
           Member of AMTA, EMBA, NCBTMB. 3Energies Massage and Bodywork
-          <p>Copyrightⓒ 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2018. </p>
+          Copyrightⓒ 2007, 2008, 2009, 2010, 2011, 2012, 2014, 2019.
           <p><i>All rights reserved.</i></p>
         </small>
       <hr/>
